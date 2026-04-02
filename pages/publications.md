@@ -7,6 +7,14 @@ background: /assets/theme/images/uni_stuttgart.jpg
 
 ## Peer-Reviewed Publications
 
+<details name="pubs">
+  <summary><strong>A Software Architecture for Real-Time Digital Twins in Machining</strong> (2026)</summary>
+  <p><strong>Authors:</strong> Author A, Author B, Author C</p>
+  <p><strong>Venue:</strong> Journal / Conference Name</p>
+  <p><strong>Abstract:</strong> This paper presents ...</p>
+  <p><strong>Links:</strong> <a href="#">PDF</a> · <a href="#">DOI</a></p>
+</details>
+
 <!-- TODO: preprint-->
 * [CEK+25] Shengjian Chen, Carsten Ellwein, Lars Klingel, Rebekka Neumann, Jingxi Zhang, Oliver Riedel, Alexander Verl, Andreas Wortmann:  
 [Digital Twins for Machine Tools: A Systematic Mapping Study](https://raw.githubusercontent.com/awortmann/awortmann.github.io/master/downloads/preprints/Digital_Twins_for_Machine_Tools_-_A_Systematic_Mapping_Study.pdf). In Digital Twin. preprint.
