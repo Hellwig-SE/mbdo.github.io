@@ -9,10 +9,19 @@ background: /assets/theme/images/uni_stuttgart.jpg
 
 <details name="pubs">
   <summary><strong>A Software Architecture for Real-Time Digital Twins in Machining</strong> (2026)</summary>
+   <img src="/assets/img/papers/paper1.png" alt="Preview of paper" style="max-width: 300px; height: auto; margin-top: 10px;">
   <p><strong>Authors:</strong> Author A, Author B, Author C</p>
   <p><strong>Venue:</strong> Journal / Conference Name</p>
   <p><strong>Abstract:</strong> This paper presents ...</p>
   <p><strong>Links:</strong> <a href="#">PDF</a> · <a href="#">DOI</a></p>
+  <button
+      type="button"
+      class="btn btn-sm btn-outline-secondary copy-cite"
+      data-target="cite-paper-2">
+      Cite
+    </button>
+  <span class="copy-feedback" style="margin-left: 0.5rem; font-size: 0.9rem;"></span>
+  <pre id="cite-paper-2" hidden>X. Author and Y. Author. “Another Paper Title.” Journal Name, 2025.</pre>
 </details>
 
 <!-- TODO: preprint-->
@@ -74,3 +83,33 @@ In: ICSE ’25: ACM/IEEE 47th International Conference on Software Engineering. 
 ## Essays
 
 * [Definition of Digital Twins](https://www.se-rwth.de/essay/Digital-Twin-Definition/)
+
+
+
+<script>
+document.addEventListener("click", async function (event) {
+  const button = event.target.closest(".copy-cite");
+  if (!button) return;
+
+  const targetId = button.dataset.target;
+  const source = document.getElementById(targetId);
+  const feedback = button.parentElement.querySelector(".copy-feedback");
+  const text = source ? source.textContent.trim() : "";
+
+  if (!text) {
+    if (feedback) feedback.textContent = "No citation text found.";
+    return;
+  }
+
+  try {
+    await navigator.clipboard.writeText(text);
+    if (feedback) feedback.textContent = "Copied.";
+    setTimeout(() => {
+      if (feedback) feedback.textContent = "";
+    }, 1500);
+  } catch (err) {
+    if (feedback) feedback.textContent = "Copy failed.";
+    console.error(err);
+  }
+});
+</script>
