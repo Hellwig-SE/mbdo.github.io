@@ -167,6 +167,7 @@ def render_details_block(
     image_path: Optional[str],
     abstract: str,
     cite_text: str,
+    doi_text:Optional[str],
 ) -> str:
     key = html.escape(pub["key"])
     title = html.escape(pub["title"])
@@ -178,7 +179,7 @@ def render_details_block(
     links_html = render_links(pub["url"], pub["doi"])
 
     has_image = bool(image_path)
-    body_class = "pub-body" if has_image else "pub-body no-image"
+    body_class = "pub-body" if has_image else "pub-body"
 
     image_html = ""
     if has_image:
@@ -220,6 +221,7 @@ def render_details_block(
       </div>
 
       <pre id="cite-paper-{index}" hidden>{cite_html}</pre>
+      <pre id="doi-paper-{index}" hidden>{doi_text}</pre>
     </div>
   </div>
 </details>
@@ -344,6 +346,7 @@ def main() -> None:
                 image_path=image_path,
                 abstract=abstract,
                 cite_text=cite_text,
+                doi_text=pub["doi"]
             )
         )
 

@@ -6,8 +6,8 @@
     "venue": "8th Workshop on Modeling and Simulation of Software-Intensive Systems (MSSiS '26), ACM, April 2026",
     "url": "http://camps.aptaracorp.com//ACM_PMS/PMS/ACM/MSSIS26/1/91846627-109f-11f1-aa9c-16ffd757ba29/OUT/mssis26-1.html",
     "doi": "",
-    "abstract": "",
-    "image": "",
+    "abstract": "Digital twins are increasingly recognized as a key enabler for optimizing complex systems by providing virtual representations that are continuously updated with real-world data. To unlock their full potential, real-time capabilities are essential, ensuring that decision-making, monitoring, and control can be performed with minimal latency.     However, previous work has mainly concentrated on offline analysis or loosely coupled synchronization, leaving the systematic design of scalable and reliable real-time digital twins insufficiently addressed.    In this paper we introduce a reference architecture for implementing real-time digital twins, covering requirements such as data acquisition, integration, synchronization, and processing, and highlighting enabling technologies that support low-latency and dependable operations.    To validate this approach, we developed a prototype framework and applied it to a machine tool case study, demonstrating how real-time synchronization and decision support can be achieved in practice.    The results show that our framework enables consistent, high-frequency interaction between physical and virtual assets, providing a foundation for advanced applications in monitoring, control, and optimization of manufacturing systems.",
+    "image": "_site/assets/images/26.MSSIS.Img.pdf",
     "cite": ""
   },
   "HMP+25": {
