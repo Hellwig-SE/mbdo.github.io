@@ -11,8 +11,11 @@ This page describes the overall idea of the Model-based DevOps project.
 [Results]({{ site.baseurl }}{% link pages/results.md %}) presents the main results created during the runtime of MBDO.
 [Publications]({{ site.baseurl }}{% link pages/publications.md %}) contains all peer-reviewed publications(including pdfs) and some of the accompanying presentations.
 [Team]({{ site.baseurl }}{% link pages/team.md %}) gives an overview of the team members.
-[Case Study Paper]({{ site.baseurl }}{% link pages/case_study_paper.md %}) is the companion website for the paper "Digital Twins for Manufacturing Systems: A Case Study Based On a
-Fischertechnik Factory".
+[Case Study Paper]({{ site.baseurl }}{% link pages/case_study_paper.md %}) is the companion website for the paper "Digital Twins for Manufacturing Systems: A Case Study Based On a Fischertechnik Factory".
+
+<!-- Figures -->
+<!-- TODO: DevOps cycle -->
+<!-- TODO: Reference architecture -->
 
 
 ## Motivation
@@ -20,6 +23,8 @@ Fischertechnik Factory".
 Time to market and continuous improvement are becoming key success indicators to deliver the cloud-native and Internet of Things (IoT) systems, which includes the IoT part of Cyber-Physical Systems (CPSs) as well. These systems are essential to the European Commission's Vision on Industry 5.0 , which is a sustainable, human-centric, and resilient Industry 4.0. In that context, the increasingly popular DevOps approach aims at combining software development ("Dev") and IT operations ("Ops") into a highly-integrated continuous loop. Through both agility and automation of complex pipelines across the various stakeholders of the entire lifecycle, DevOps aims to shorten the systems development time and provide continuous delivery with high software quality. Through this continuous delivery, the quality, sustainability, and resiliency of IoT systems can be continuously improved. 
 
 ## Models in DevOps
+
+<img src="/assets/images/MBDO_DevOpsCycle.png" width="75%" />
 
 Automation in DevOps is enabled by leveraging multiple models, typically expressed in either explicit Domain-Specific Languages (DSLs) or, most often, implicitly using concrete syntaxes such as JSON, XML, or even just ad hoc annotations in a general-purpose programming language, such as Java. These models are used among others for (M1) code generation during design time [CFJ+16], and (M2) for configuration of the overall IoT system at runtime [BBF09, MBJ+09]. These uses of models yield individual advantages: Design time models and automated code generation lead to better efficiency of the developers, better quality of the results, and usually also to an improvement of agility, because refactoring becomes easier. Using models at runtime has the advantage that IT operations or even the end-user may reconfigure and adapt the models and thus the software part of a system, while it is already in operation. These models at runtime can thus be seen as primitive digital twins [BR16, KMR+20] of the represented IoT systems.
 
